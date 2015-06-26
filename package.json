@@ -1,0 +1,21 @@
+{
+  "name": "my_flux",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "dependencies": {
+    "node-libs-browser": "^0.5.2",
+    "webpack": "^1.9.12",
+    "webpack-dev-server": "^1.9.0",
+    "webpack-reload-plugin": "^0.1.2"
+  },
+  "devDependencies": {
+    "html-webpack-plugin": "^1.5.2"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "live-server build & webpack --watch"
+  },
+  "author": "",
+  "license": "ISC"
+}
