@@ -14,7 +14,7 @@
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "live-server build & webpack --watch"
+    "dev": "live-server build --no-browser & webpack --watch"
   },
   "author": "",
   "license": "ISC"
