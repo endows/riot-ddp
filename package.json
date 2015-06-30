@@ -4,6 +4,7 @@
   "description": "",
   "main": "main.js",
   "dependencies": {
+    "asteroid.browser": "^0.6.1",
     "node-libs-browser": "^0.5.2",
     "webpack": "^1.9.12",
     "webpack-dev-server": "^1.9.0",
@@ -14,7 +15,7 @@
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "live-server build --no-browser & webpack --watch"
+    "dev": "live-server build --no-browser & webpack --watch & (cd server && meteor)"
   },
   "author": "",
   "license": "ISC"
