@@ -1,8 +1,9 @@
-webpack = require('webpack')
+var webpack = require('webpack');
+
 module.exports = {
-  entry: './src/index',
+  entry: './app/index',
   output: {
-    path: './build',
+    path: __dirname + '/public',
     filename: 'bundle.js'
   },
   plugins: [
@@ -15,7 +16,10 @@ module.exports = {
       { test: /\.tag$/, exclude: /node_modules/, loader: 'riotjs-loader', query: { type: 'none' } }
     ],
     loaders: [
-      { test: /\.js|\.tag$/, exclude: /node_modules/, loader: 'babel-loader' }
+      { test: /\.js|\.tag$/, exclude: /node_modules/, loader: '6to5-loader' }
     ]
+  },
+  devServer: {
+    contentBase: './public'
   }
 };
